@@ -56,10 +56,17 @@ export default {
                         url: '/logout'
                     },
                     user: {
-                        url: 'api/user'
-                    }
+                        url: '/api/user'
+                    },
+                },
+                user: {
+                    property: false
                 }
             },
+        },
+        redirect: {
+            login: '/auth/login',
+            home: '/dashboard',
         }
     },
 
