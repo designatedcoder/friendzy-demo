@@ -9,7 +9,7 @@
                             {{ this.$auth.user.username }}
                         </NuxtLink>
                     </span>
-                        <NuxtLink to="#" class="hover:text-teal-200">
+                        <NuxtLink to="/friends" class="hover:text-teal-200">
                             FRIENDS
                         </NuxtLink>
                         <NuxtLink to="/users" class="hover:text-teal-200">
