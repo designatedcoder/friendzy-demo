@@ -1,7 +1,8 @@
 export default {
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
-        title: 'client',
+        title: process.env.npm_package_name || '',
+        titleTemplate: 'Friendzy %s',
         htmlAttrs: {
             lang: 'en'
         },
@@ -14,6 +15,8 @@ export default {
             { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
         ]
     },
+
+    loading: false,
 
     // Global CSS: https://go.nuxtjs.dev/config-css
     css: [],
@@ -66,6 +69,7 @@ export default {
         },
         redirect: {
             login: '/auth/login',
+            logout: '/',
             home: '/dashboard',
         }
     },

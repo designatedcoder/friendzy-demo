@@ -21,6 +21,13 @@
 
 <script>
     export default {
+        middleware: 'guest',
+        head: {
+            title: '',
+            meta: [
+                { hid: 'description', name: 'description', content: 'Login page' }
+            ],
+        },
         data:() => ({
             form: {
                 email: '',

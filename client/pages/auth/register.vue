@@ -34,6 +34,13 @@
 
 <script>
     export default {
+        middleware: 'guest',
+        head: {
+            title: ' | Register',
+            meta: [
+                { hid: 'description', name: 'description', content: 'Registration page' }
+            ],
+        },
         data: ()=> ({
             form: {
                 name: '',

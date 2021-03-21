@@ -27,6 +27,7 @@
 
 <script>
     export default {
+        middleware: 'auth',
         data: ()=>({
             friends: [],
             requests: [],
