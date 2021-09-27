@@ -8,6 +8,9 @@
 
 <script>
 export default {
-    middleware: 'guest'
+    middleware: 'guest',
+    head: {
+        title: '',
+    },
 }
 </script>
