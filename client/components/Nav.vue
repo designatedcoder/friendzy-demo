@@ -1,6 +1,6 @@
 <template>
     <div class="bg-teal-500 text-white text-md">
-        <nav class="container flex justify-between items-center mx-auto py-5">
+        <nav class="container flex justify-between items-center max-w-6xl mx-auto py-5 sm:px-6 lg:px-8">
             <span class="font-semibold text-2xl">Friendzy</span>
             <div class="space-x-2">
                 <template v-if="this.$auth.loggedIn">
